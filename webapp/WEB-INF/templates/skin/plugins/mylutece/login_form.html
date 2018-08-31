@@ -1,0 +1,64 @@
+<div class="row appointment_management">
+	<div class="col-xs-12 col-sm-12">
+		<div class="container">
+			<h2>#i18n{mylutece.xpage.login_form.pageTitle}</h2>
+			<form class="form-horizontal" method="post" action="${url_dologin}">
+				<fieldset>
+					<legend class="sr-only">#i18n{mylutece.xpage.login_form.pageTitle}</legend>
+					<br />
+					<p class="text-danger">
+						<span class="lead">${error_message}</span><br />
+						${error_detail}
+					</p>
+					<br/>
+					<div class="form-group">
+						<label class="control-label col-xs-12 col-sm-3">#i18n{mylutece.xpage.login_form.labelAccessCode} :</label>
+						<div class="col-xs-12 col-sm-9 col-md-6">
+							<input type="text" name="username" class="form-control input-sm" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-xs-12 col-sm-3">#i18n{mylutece.xpage.login_form.labelPassword} :</label>
+						<div class="col-xs-12 col-sm-9 col-md-6">
+							<input type="password" name="password" class="form-control input-sm" />
+						</div>
+					</div>
+					<#if is_active_captcha>
+					<div class="form-group">
+						${captcha}
+					</div>
+					</#if>
+					<input type="hidden" name="page" value="mylutece" />
+					<input type="hidden" name="action" value="dologin" />
+					<input type="hidden" name="token" value="${token}" />
+					<div class="form-group">
+						<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6">
+							<button type="submit" class="btn btn-primary btn-sm" name="Submit">
+								<span class="glyphicon glyphicon-lock"></span>&nbsp;#i18n{mylutece.xpage.login_form.labelButton}
+							</button>
+                                                    
+							<a class="btn btn-primary btn-sm" style="color:#fff;" title="#i18n{mylutece.xpage.lostPasswordLabel}" href="jsp/site/Portal.jsp?page=mylutecedatabase&action=lostPassword">
+								<span class="glyphicon glyphicon-question-sign"></span>&nbsp;#i18n{mylutece.xpage.lostPasswordLabel}
+							</a>
+					
+							<a  class="btn btn-primary btn-sm" id="button-return" name="back"  onclick='javascript:history.go(-1)' >   
+								<span class="glyphicon "></span>&nbsp;#i18n{module.mylutece.database.xpage.account.btnBack}
+							</a>  
+						</div>
+					</div>
+					<!--<#if url_new_account?has_content>
+					<a class="btn btn-primary btn-sm" style="color:#fff;" title="#i18n{mylutece.xpage.login_form.labelButtonCreateAccount}" href="${url_new_account}">
+						<span class="glyphicon glyphicon-plus"></span>&nbsp;#i18n{mylutece.xpage.login_form.labelButtonCreateAccount}
+					</a>
+					</#if>-->
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script>
+  $( function() {
+		$(document.body).attr('id','loggedIn');
+  } );
+</script>

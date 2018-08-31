@@ -1,0 +1,37 @@
+<!-- footer -->
+<footer>
+	<div class="row footer">
+		<div class="container">
+			
+			<div class="col-xs-12 col-sm-9 col-md-10">
+				<ul>
+					<li class="active">
+						<a href="jsp/site/Portal.jsp?page=publicmeeting">#i18n{portal.site.page_home.label}</a>
+					</li>
+					<li class="active">
+						<a href="jsp/site/Portal.jsp?page=meeting">#i18n{transparency.manage_appointments.title}</a>
+					</li>
+					<li class="active">
+						<a href="jsp/site/Portal.jsp?page=publicmeeting">#i18n{portal.site.adminFeature.admin_site.name}</a>
+					</li>
+
+					<#if isContactInstalled?? && isContactInstalled>
+							<!-- <li><a href="jsp/site/Portal.jsp?page=contact" accesskey="7" >#i18n{portal.site.page_menu_tools.xpage.contact}</a></li> -->
+					</#if>
+					<li>
+						<a href="http://fr.lutece.paris.fr" title="lutece (nouvelle fenêtre)" target="_blank">propulsé par lutece</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+<!-- Included JS Files -->
+<script src="js/jquery/jquery.min.js"></script>
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
