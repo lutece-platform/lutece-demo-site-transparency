@@ -13,19 +13,25 @@ All Lutece images are available at https://hub.docker.com/u/lutece/
 ## Launch the server
 
 
-`docker run -p 80:8080 lutece/transparency`
+`docker run -p 80:8080 site-demo-transparency`
 
 ## Connect to the server to see the service
 
 'http://localhost/transparency'
 
 ## Add appointments
-go to : http://localhost/transparency/jsp/site/Portal.jsp?page=meeting
+go to : 'http://localhost/transparency/jsp/site/Portal.jsp?page=meeting'
 
 and connect with login/pwd : test_user/test_user
 
 ## Back office management
 
-http://localhost/tools/jsp/admin/AdminLogin.jsp
+'http://localhost/tools/jsp/admin/AdminLogin.jsp'
 
 Connect to the back office with login/pwd : admin/transparency
+
+## Sources
+The sources of this plugin are available at :
+'https://github.com/lutece-secteur-public/opengov-plugin-transparency'
+
+more information about Lutèce framework : 'https://fr.lutece.paris.fr/fr/wiki/home.html'
