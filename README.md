@@ -34,4 +34,4 @@ Connect to the back office with login/pwd : admin/transparency
 The sources of this plugin are available at :
 'https://github.com/lutece-secteur-public/opengov-plugin-transparency'
 
-more information about Lutèce framework : 'https://fr.lutece.paris.fr/fr/wiki/home.html'
+more information about Lutèce framework : 'https://lutece.paris.fr/lutece/'
