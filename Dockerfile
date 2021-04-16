@@ -31,7 +31,7 @@ RUN  /etc/init.d/mysql start && \
     sleep 5s && \
     /etc/init.d/mysql stop 
 
-RUN mv /app/target/${site}/ /var/lib/tomcat8/webapps/transparency
+RUN mv /app/target/${site}/ /var/lib/tomcat9/webapps/transparency
 
 
 COPY entrypoint.sh /entrypoint.sh
