@@ -68,6 +68,12 @@
             <version>2.5.2</version>
             <type>jar</type>
         </dependency>
-
     </dependencies>
+
+    <scm>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-demo-site-transparency.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-demo-site-transparency.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-demo-site-transparency.git</url>
+    </scm>
+
 </project>
